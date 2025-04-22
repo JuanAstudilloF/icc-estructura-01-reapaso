@@ -14,7 +14,6 @@ public class Persona {
         return nombre + " - " + edad;
     }
 
-    // Getters
     public String getNombre() {
         return nombre;
     }
@@ -23,7 +22,6 @@ public class Persona {
         return edad;
     }
 
-    // Setters
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
