@@ -1,32 +1,34 @@
-package Controllers;
+package Models;
 
-import Models.Persona;
+public class Persona {
+    private String nombre;
+    private int edad;
 
-/**
- * Controlador para manejar la lógica de operaciones sobre arrays de Persona.
- */
-public class PersonaController {
-    /**
-     * Método para ordenar un arreglo de Persona por edad utilizando el algoritmo de
-     * inserscion .
-     * 
-     * @param personas Array de Persona a ordenar.
-     */
-    public void ordenarPorEdad(Persona[] personas) {
-        throw new UnsupportedOperationException("Not implemented yet.");
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
     }
 
-    /**
-     * Método para buscar la primera persona con una edad específica en un array de
-     * Persona.
-     * 
-     * @param personas Array de Persona donde buscar.
-     * @param edad     Edad a buscar.
-     * @return La primera Persona con la edad especificada, o null si no se
-     *         encuentra.
-     */
-    public Persona buscarPorEdad(Persona[] personas, int edad) {
-        throw new UnsupportedOperationException("Not implemented yet.");
+    @Override
+    public String toString() {
+        return nombre + " - " + edad;
+    }
 
+    // Getters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    // Setters
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 }
